@@ -6,7 +6,7 @@
   "keywords": [
   ],
   "activationCommands": {
-    "atom-workspace": "css-remap:toggle"
+    "atom-workspace": "css-remap:convert DOM styles to css"
   },
   "repository": "https://github.com/atom/css-remap",
   "license": "MIT",

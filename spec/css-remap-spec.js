@@ -15,7 +15,7 @@ describe('CssRemap', () => {
     activationPromise = atom.packages.activatePackage('css-remap');
   });
 
-  describe('when the css-remap:toggle event is triggered', () => {
+  describe('when the css-remap:convert DOM styles to css event is triggered', () => {
     it('hides and shows the modal panel', () => {
       // Before the activation event the view is not on the DOM, and no panel
       // has been created
@@ -23,7 +23,7 @@ describe('CssRemap', () => {
 
       // This is an activation event, triggering it will cause the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'css-remap:toggle');
+      atom.commands.dispatch(workspaceElement, 'css-remap:convert DOM styles to css');
 
       waitsForPromise(() => {
         return activationPromise;
@@ -37,7 +37,7 @@ describe('CssRemap', () => {
 
         let cssRemapPanel = atom.workspace.panelForItem(cssRemapElement);
         expect(cssRemapPanel.isVisible()).toBe(true);
-        atom.commands.dispatch(workspaceElement, 'css-remap:toggle');
+        atom.commands.dispatch(workspaceElement, 'css-remap:convert DOM styles to css');
         expect(cssRemapPanel.isVisible()).toBe(false);
       });
     });
@@ -55,7 +55,7 @@ describe('CssRemap', () => {
 
       // This is an activation event, triggering it causes the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'css-remap:toggle');
+      atom.commands.dispatch(workspaceElement, 'css-remap:convert DOM styles to css');
 
       waitsForPromise(() => {
         return activationPromise;
@@ -65,7 +65,7 @@ describe('CssRemap', () => {
         // Now we can test for view visibility
         let cssRemapElement = workspaceElement.querySelector('.css-remap');
         expect(cssRemapElement).toBeVisible();
-        atom.commands.dispatch(workspaceElement, 'css-remap:toggle');
+        atom.commands.dispatch(workspaceElement, 'css-remap:convert DOM styles to css');
         expect(cssRemapElement).not.toBeVisible();
       });
     });

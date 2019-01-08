@@ -1,5 +1,5 @@
 {
   "atom-workspace": {
-    "ctrl-alt-o": "css-remap:toggle"
+    "ctrl-alt-o": "css-remap:convert DOM styles to css"
   }
 }
