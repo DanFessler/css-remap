@@ -1,7 +1,7 @@
 {
   "name": "css-remap",
   "main": "./lib/css-remap",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Convert JSX inline-styles to pure CSS",
   "keywords": [],
   "activationCommands": {
