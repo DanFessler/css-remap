@@ -2,9 +2,8 @@
   "name": "css-remap",
   "main": "./lib/css-remap",
   "version": "0.0.0",
-  "description": "A short description of your package",
-  "keywords": [
-  ],
+  "description": "Convert JSX inline-styles to pure CSS",
+  "keywords": [],
   "activationCommands": {
     "atom-workspace": "css-remap:convert DOM styles to css"
   },
@@ -13,6 +12,5 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
