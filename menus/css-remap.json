@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle css-remap",
+        "command": "css-remap:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "css-remap",
+          "submenu": [
+            {
+              "label": "Remap inline style to css",
+              "command": "css-remap:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
